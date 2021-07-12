@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guilherme Gonçalves">
+    <!--FAVICON-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--BOOTSTRAP CSS-->
+    <!--BOOTSTRAP LOCAL FILE-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--MY CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-md-0 mb-5 bold-text" href="index.html">the monkey weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-6" style="align-items: flex-end; width: auto;">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#parallax2">Source</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--NAVBAR END-->
+    <main>
+        <!--ABOUT SECTION-->
+        <div class="parallax" id="parallax1">
+            <h1 class="text-center" style=" padding-top: 100px;">about</h1>
+
+        </div>
+
+        <div class="container py-5">
+            <p>The Monkey Weather or "O Tempo Macaco" in portuguese is a meterologic service system in which the profit
+                of the same goes to Monkey Santuaries and Non-profit Animal Wellfare Organizations.</p>
+            <p>Created to provide information about the weather whilst also sharing awareness about the dificulties
+                monkeys worldwide are facing everyday.</p>
+
+        </div>
+        <div class="container py-3">
+            <h2>Did you know?</h2>
+            <p>More than half the world's primates, including apes, lemurs and monkeys, are facing extinction. The main
+                threats are well-known which include habitat loss especially the clearing of tropical forests, and the
+                hunting of primates for food and the illegal wildlife trade.</p>
+        </div>
+
+        <div class="container py-3 pb-5">
+            <h2>How can you help?</h2>
+            <p>You can sign Petitions, Volunteer or Donate!</p>
+            <p>Below you can find some examples of non-profit organizations that can get you more envolved:</p>
+            <div class="row pt-3 pb-5">
+                <div class="col">
+                    <a href="https://primatecare.org" target="_blank"><img width="200px"
+                            src="/img/logosOrg/primatecare.webp"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.worldwildlife.org/species/chimpanzee" target="_blank"><img width="200px"
+                            src="/img/logosOrg/wwf.png"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.world-unite.de/en/internships-volunteering/southafrica/vervet-monkeys-sanctuary-rescue.html"
+                        target="_blank"><img width="200px" src="/img/logosOrg/worldUnite.png"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.apeactionafrica.org/" target="_blank"><img width="200px"
+                            src="/img/logosOrg/apeAction.png"></a>
+                </div>
+                <div class="col">
+                    <a href="https://pasa.org/volunteer/" target="_blank"><img width="200px"
+                            src="/img/logosOrg/pasa.png"></a>
+                </div>
+            </div>
+        </div>
+        <!--ABOUT END-->
+
+        <!--SOURCE-->
+        <div class="parallax pt-5" id="parallax2">
+            <h1 class="text-center" style=" padding-top: 100px;">Source</h1>
+        </div>
+
+        <div class="container py-5">
+            <p>The Monkey Weather Meteorologic Service was designed and developed by Guilherme R Goncalves as a student
+                project for <a href="https://www.cesae.pt/" target="_blank">CESAE DIGITAL</a> - "Centro para o
+                Desenvolvimento de
+                Competências Digitais" in Porto, Portugal.</p>
+            <p>This was accomplished using IPMA's API. </p>
+            <p><a href="https://www.ipma.pt/pt/index.html/" target="_blank">IPMA - "Instituto Português do Mar e da
+                    Atmosfera"</a> is the
+                portuguese statal weather institute which is responsable for providing accurate meteorologic information
+                for
+                Portugal's mainland and islands. </p>
+            <p>As IPMA's API information is restricted to the portuguese territory, also is The Weather Monkey. </p>
+        </div>
+        <!--SOURCE END-->
+
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid pb-0 mb-0 mt-5 justify-content-center text-light "
+            style="background-color: rgb(255, 180, 68)">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="row py-5">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                            <a href="index.html">
+                                <h3 class="mb-md-0 mb-5 bold-text">the monkey weather</h3>
+                            </a>
+                            <div class="container mt-5">
+                                <i class="fab fa-facebook" id="facebook"></i> <i class="fab fa-instagram"
+                                    id="instagram"></i><i class="fab fa-twitter" id="twitter"></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                            <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5"><b>menu</b></h6>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="#parallax2">Source</a></li>
+                                <li data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5"><b>creator</b></h6>
+                            <p class="mb-1">Guilherme R Gonçalves</p>
+                            <p><a href="mailto:talks@ggoncalves.com">talks@ggoncalves.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-1 order-sm-1 order-3 align-self-end">
+                            <small class="rights"><span>&#174;</span> THE MONKEY WEATHER - ALL RIGHTS RESERVED.</small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: rgb(255, 180, 68);">
+                        <h5 class="modal-title" id="staticBackdropLabel" style="color: white">Contact Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="py-4 px-5">
+                            <div class="mb-3">
+                                <label for="form-name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="form-name" placeholder="Who is you?"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="form-email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" required id="form-email"
+                                    placeholder="Insert an e-mail">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="form-subject" placeholder="What's up?">
+                            </div>
+                            <div class="mb-3">
+                                <label for="text-area">Message</label>
+                                <textarea class="form-control" id="text-area" rows="3" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" class="btn btn-secondary">Clear</button>
+                        <button type="submit" class="btn"
+                            style="background-color: rgb(255, 180, 68); color: white;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+
+    <!--MAIN JS-->
+    <script src="js/main.js"></script>
+    <!--BOOTSTRAP LOCAL FILE-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

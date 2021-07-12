@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Guilherme Gonçalves">
+  <!--FAVICON-->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <!--BOOTSTRAP CSS-->
+  <!--BOOTSTRAP LOCAL FILE-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--MY CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--ANIMATE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--FONTAWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous">
+  <title>the monkey weather</title>
+</head>
+
+<body>
+  <header>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-md-0 mb-5 bold-text" href="index.html">the monkey weather</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-6" style="align-items: flex-end; width: auto;">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html#parallax2">Source</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--NAVBAR END-->
+  </header>
+  <main>
+
+    <!--SERVICE-->
+    <h1 class="text-muted mb-md-0 mb-5 bold-text text-center mt-4">the monkey weather</h1>
+    <p class="text-center mt-3">The Monkey Weather will tell you where you are and the Weather for today, tomorrow and
+      for
+      the next day!</p>
+    <div class="container text-center mt-4 mb-3">
+      <button class="btn" style="background-color: rgb(255, 180, 68); color: white;" type="submit"
+        onclick="geo()">Search Weather</button>
+    </div>
+    <div class="container">
+      <div class="card bg-dark text-white mb-5">
+        <img class="card-img" id="image1" src="IMG/banana.jfif" style="max-height: 350px; object-fit: cover;"
+          alt="Card image">
+        <div class="card-img-overlay overlay">
+          <div class="row">
+            <div class="col-3 text-justify py-4 px-4" id="overlay1">
+              <p class="card-title" id="tempMaxHoje"></p>
+              <p class="card-title" id="tempMinHoje"></p>
+              <p class="card-title" id="intVentoHoje"></p>
+              <p class="card-title" id="directVentoHoje"></p>
+              <p class="card-title" id="chuvaHoje"></p>
+            </div>
+            <div class="col text-center">
+              <h1 id="local"></h1>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center" style="background-color:rgb(255, 180, 68);">
+          <h3 id="today"></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col col-lg-6 col-sm-12">
+          <div class="card card bg-dark text-white mb-5">
+            <img class="card-img-top" src="IMG/macaco.jfif" id="image2"
+              style="width: 100%; max-height: 250px; object-fit: cover;" alt="Card image cap">
+            <div class="card-img-overlay">
+              <div class="col-6 px-4 py-4" id="overlay2">
+                <p class="card-title" id="tempMaxAmanha"></p>
+                <p class="card-title" id="tempMinAmanha"></p>
+                <p class="card-title" id="intVentoAmanha"></p>
+                <p class="card-title" id="directVentoAmanha"></p>
+                <p class="card-title" id="chuvaAmanha"></p>
+              </div>
+            </div>
+            <div class="col text-center" style="background-color:rgb(255, 180, 68);">
+              <h3 id="tomorrow"></h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-6 col-sm-12">
+          <div class="card card bg-dark text-white mb-5">
+            <img class="card-img-top" src="IMG/macaco2.jfif" id="image3"
+              style="width: 100%; max-height: 250px; object-fit: cover;" alt="Card image cap">
+            <div class="card-img-overlay">
+              <div class="col-6 px-4 py-4" id="overlay3">
+                <p class="card-title" id="tempMaxDepois"></p>
+                <p class="card-title" id="tempMinDepois"></p>
+                <p class="card-title" id="intVentoDepois"></p>
+                <p class="card-title" id="directVentoDepois"></p>
+                <p class="card-title" id="chuvaDepois"></p>
+              </div>
+            </div>
+            <div class="col text-center" style="background-color:rgb(255, 180, 68)">
+              <h3 id="nextDay"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SERVICE END-->
+  </main>
+
+  <!--FOOTER-->
+  <footer>
+    <div class="container-fluid pb-0 mb-0 mt-5 justify-content-center text-light "
+      style="background-color: rgb(255, 180, 68)">
+      <div class="row justify-content-center">
+        <div class="col-11">
+          <div class="row py-5">
+            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+              <a href="index.html">
+                <h3 class="mb-md-0 mb-5 bold-text">the monkey weather</h3>
+              </a>
+              <div class="container mt-5">
+                <i class="fab fa-facebook" id="facebook"></i> <i class="fab fa-instagram" id="instagram"></i><i
+                  class="fab fa-twitter" id="twitter"></i>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+              <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5"><b>menu</b></h6>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#parallax2">Source</a></li>
+                <li data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+              <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5"><b>creator</b></h6>
+              <p class="mb-1">Guilherme R Gonçalves</p>
+              <p><a href="mailto:talks@ggoncalves.com">talks@ggoncalves.com</a></p>
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-1 order-sm-1 order-3 align-self-end">
+              <small class="rights"><span>&#174;</span> THE MONKEY WEATHER - ALL RIGHTS RESERVED.</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: rgb(255, 180, 68);">
+            <h5 class="modal-title" id="staticBackdropLabel" style="color: white">Contact Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="py-4 px-5">
+              <div class="mb-3">
+                <label for="form-name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="form-name" placeholder="Who is you?" required>
+              </div>
+              <div class="mb-3">
+                <label for="form-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" required id="form-email" placeholder="Insert an e-mail">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="form-subject" placeholder="What's up?">
+              </div>
+              <div class="mb-3">
+                <label for="text-area">Message</label>
+                <textarea class="form-control" id="text-area" rows="3" placeholder="Your Message" required></textarea>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="reset" class="btn btn-secondary">Clear</button>
+            <button type="submit" class="btn" style="background-color: rgb(255, 180, 68); color: white;">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER END-->
+  </footer>
+
+  <!--MAIN JS-->
+  <script src="js/main.js"></script>
+  <!--BOOTSTRAP LOCAL FILE-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
